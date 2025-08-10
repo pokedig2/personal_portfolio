@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Blog Website</title>
+    <title>Destin Byrd - Portfolio</title>
     <!-- Link to css -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Box icons -->
@@ -16,177 +16,130 @@
         <!-- Nav -->
         <div class="nav container">
         <!-- Logo -->
-        <a href="#" class="logo">Port<span>folio</span></a>
-        <!-- Login Btn -->
-        <a href="#" class="login">Login</a>
+        <a href="#home" class="logo">Destin<span>Byrd</span></a>
+        <!-- Navigation -->
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </div>
     </header>
     <!-- Home -->
     <section class="home" id="home">
         <div class="home-text container">
-            <h2 class="home-title">Destin's Blog and Portfolio</h2>
-            <span class="home-subtitle">An overview of Destin's Projects and Experience with Posts</span>
+            <h2 class="home-title">Destin Byrd</h2>
+            <span class="home-subtitle">Software Developer & Creative Technologist</span>
         </div>
     </section>
-    <!-- Post Filter -->
-    <div class="post-filter container">
-        <span class="filter-item active-filter" data-filter="all">All</span>
-        <span class="filter-item" data-filter="design">Design</span>
-        <span class="filter-item" data-filter="tech">Tech</span>
-        <span class="filter-item" data-filter="mobile">Mobile</span>
-    </div>
-    <!-- Posts -->
-    <section class="post container">
-        <!-- Post Box 1 -->
-        <div class="post-box design">
-            <img src="/img/post-1.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="/post-page.html" class="post-title">
-                Learning how to use JQUERY to build a blog
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-1.jpg" alt="" class="profile-img">
-                <span class ="profile-name">John Dover</span>
-            </div>
+    
+    <!-- About Section -->
+    <section class="about container" id="about">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p class="about-text">
+                I'm a passionate software developer with expertise in modern web technologies. 
+                I love creating elegant solutions to complex problems and building user-friendly applications.
+            </p>
         </div>
-        <!-- Post Box 2 -->
-        <div class="post-box mobile">
-            <img src="/img/post-2.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
-            <a href="/post-page.html" class="post-title">
-                How pull data from an API
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-2.jpg" alt="" class="profile-img">
-                <span class ="profile-name">Jessica Smith</span>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills container" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <h3>Frontend Development</h3>
+                <p>HTML, CSS, JavaScript, React, Vue.js</p>
             </div>
-        </div>
-        <!-- Post Box 3 -->
-        <div class="post-box tech">
-            <img src="/img/post-3.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="/post-page.html" class="post-title">
-                How to save Gotham City
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-3.jpg" alt="" class="profile-img">
-                <span class ="profile-name">Bruce Wayne</span>
+            <div class="skill-item">
+                <h3>Backend Development</h3>
+                <p>Node.js, Python, Express.js, Database Design</p>
             </div>
-        </div>
-        <!-- Post Box 4 -->
-        <div class="post-box design">
-            <img src="/img/post-4.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="/post-page.html" class="post-title">
-                How To Create Your Own Website
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-1.jpg" alt="" class="profile-img">
-                <span class ="profile-name">John Dover</span>
-            </div>
-        </div>
-        <!-- Post Box 5 -->
-        <div class="post-box tech">
-            <img src="/img/post-5.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="/post-page.html" class="post-title">
-                Using MYSQL in conjunction with JQUERY to build a blog
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-1.jpg" alt="" class="profile-img">
-                <span class ="profile-name">John Dover</span>
-            </div>
-        </div>
-        <!-- Post Box 6 -->
-        <div class="post-box mobile">
-            <img src="/img/post-6.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
-            <a href="/post-page.html" class="post-title">
-               React in modern website building
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-1.jpg" alt="" class="profile-img">
-                <span class ="profile-name">John Dover</span>
-            </div>
-        </div>
-        <!-- Post Box 7 -->
-        <div class="post-box design">
-            <img src="/img/post-7.jpg" alt="" class="post-img">
-            <h2 class="category">Design</h2>
-            <a href="/post-page.html" class="post-title">
-                Learning how to use JQUERY to build a blog
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-1.jpg" alt="" class="profile-img">
-                <span class ="profile-name">John Dover</span>
-            </div>
-        </div>
-        <!-- Post Box 8 -->
-        <div class="post-box mobile">
-            <img src="/img/post-8.jpg" alt="" class="post-img">
-            <h2 class="category">Mobile</h2>
-            <a href="/post-page.html" class="post-title">
-                How pull data from an API
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-2.jpg" alt="" class="profile-img">
-                <span class ="profile-name">Jessica Smith</span>
-            </div>
-        </div>
-        <!-- Post Box 9 -->
-        <div class="post-box tech">
-            <img src="/img/post-9.jpg" alt="" class="post-img">
-            <h2 class="category">Tech</h2>
-            <a href="/post-page.html" class="post-title">
-                How to save Gotham City
-            </a>
-            <span class="post-date">12 Jan 4 2021</span>
-            <p class="post-description">Lorem ipsum dolar sit amet connseture dispiscing</p>
-            <!-- Profile -->
-            <div class="profile">
-                <img src="/img/profile-3.jpg" alt="" class="profile-img">
-                <span class ="profile-name">Bruce Wayne</span>
+            <div class="skill-item">
+                <h3>Tools & Technologies</h3>
+                <p>Git, Docker, AWS, REST APIs</p>
             </div>
         </div>
     </section>
+
+    <!-- Projects Section -->
+    <section class="projects container" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Project One</h3>
+                    <p class="project-description">A modern web application built with React and Node.js</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Project Two</h3>
+                    <p class="project-description">Mobile-first responsive design with modern CSS</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS3</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-content">
+                    <h3 class="project-title">Project Three</h3>
+                    <p class="project-description">Full-stack application with authentication and database</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">JWT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact container" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-content">
+            <p class="contact-text">
+                I'm always interested in new opportunities and exciting projects. 
+                Feel free to reach out if you'd like to collaborate or just say hello!
+            </p>
+            <div class="contact-links">
+                <a href="mailto:destin@example.com" class="contact-link">
+                    <i class='bx bx-envelope'></i>
+                    destin@example.com
+                </a>
+                <a href="https://github.com/destinbyrd" class="contact-link">
+                    <i class='bx bxl-github'></i>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/destinbyrd" class="contact-link">
+                    <i class='bx bxl-linkedin'></i>
+                    LinkedIn
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <div class="footer container">
-         <p>Copyright &copy; 2025 Destin</p>
+         <p>Copyright &copy; 2025 Destin Byrd</p>
          <div class="social">
-             <a href="#"><i class='bx bxl-facebook'></i></a>
-             <a href="#"><i class='bx bxl-twitter'></i></a>
-             <a href="#"><i class='bx bxl-instagram'></i></a>
+             <a href="#"><i class='bx bxl-github'></i></a>
              <a href="#"><i class='bx bxl-linkedin'></i></a>
+             <a href="#"><i class='bx bxl-twitter'></i></a>
+             <a href="#"><i class='bx bx-envelope'></i></a>
          </div>
     </div>
-    <!-- JQuery Link -->
-    <script src="https://code.jquery.com/jquery-3.7.1.js"
-            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-            crossorigin="anonymous"></script> -->
+
     <!-- Link To JS -->
     <script src="/js/main.js"></script>
 </body>
