@@ -8,7 +8,8 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "parse:resume": "tsx scripts/parse-resume.ts"
+    "parse:resume": "tsx scripts/parse-resume.ts",
+    "dump:resume": "tsx scripts/dump-resume.ts"
   },
   "dependencies": {
     "pdf-parse": "^1.1.1",
