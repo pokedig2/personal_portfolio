@@ -12,6 +12,7 @@ function App() {
             <a href="#skills" className="hover:text-emerald-300">Skills</a>
             <a href="#experience" className="hover:text-emerald-300">Experience</a>
             <a href="#contact" className="hover:text-emerald-300">Contact</a>
+            <a href="/Destin_Resume.pdf" className="rounded-md border border-white/10 px-3 py-1.5 hover:border-white/25">Resume</a>
           </nav>
         </div>
       </header>
