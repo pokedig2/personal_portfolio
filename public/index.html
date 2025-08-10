@@ -302,5 +302,72 @@
 
     <!-- Link To JS -->
     <script src="/js/main.js"></script>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3T1Y0J9G3L"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-3T1Y0J9G3L', {
+            page_title: 'Destin Byrd - Software Developer Portfolio',
+            page_location: window.location.href,
+            custom_map: {
+                'custom_parameter_1': 'user_type',
+                'custom_parameter_2': 'page_section'
+            }
+        });
+        
+        // Track scroll depth
+        let maxScroll = 0;
+        window.addEventListener('scroll', function() {
+            const scrollPercent = Math.round((window.scrollY / (document.body.scrollHeight - window.innerHeight)) * 100);
+            if (scrollPercent > maxScroll) {
+                maxScroll = scrollPercent;
+                if (maxScroll % 25 === 0) { // Track at 25%, 50%, 75%, 100%
+                    gtag('event', 'scroll_depth', {
+                        'scroll_percentage': maxScroll
+                    });
+                }
+            }
+        });
+        
+        // Track section engagement
+        const sections = ['about', 'education', 'experience', 'skills', 'projects', 'contact'];
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const sectionObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    gtag('event', 'section_view', {
+                        'section_name': entry.target.id
+                    });
+                }
+            });
+        }, observerOptions);
+        
+        sections.forEach(sectionId => {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                sectionObserver.observe(section);
+            }
+        });
+        
+        // Track contact link clicks
+        document.addEventListener('click', function(e) {
+            if (e.target.closest('.contact-link') || e.target.closest('.social a')) {
+                const link = e.target.closest('a');
+                gtag('event', 'contact_click', {
+                    'contact_method': link.href.includes('mailto') ? 'email' : 
+                                    link.href.includes('github') ? 'github' :
+                                    link.href.includes('linkedin') ? 'linkedin' :
+                                    link.href.includes('twitter') ? 'twitter' : 'other'
+                });
+            }
+        });
+    </script>
 </body>
 </html>
