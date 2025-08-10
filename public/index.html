@@ -4,37 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destin Byrd - Portfolio</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Destin Byrd - Software Developer & CS Graduate | Full-Stack Developer</title>
+    <meta name="title" content="Destin Byrd - Software Developer & CS Graduate | Full-Stack Developer">
+    <meta name="description" content="Software developer with expertise in React, Node.js, Python, and Java. CS graduate from CSULB, pursuing MS in Computer Science at Georgia Tech. Specializing in full-stack development and machine learning.">
+    <meta name="keywords" content="Destin Byrd, software developer, full-stack developer, React, Node.js, Python, Java, Georgia Tech, CSULB, machine learning, AI, web development, mobile development">
+    <meta name="author" content="Destin Byrd">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://destinbyrd.com/">
+    <meta property="og:title" content="Destin Byrd - Software Developer & CS Graduate">
+    <meta property="og:description" content="Software developer with expertise in React, Node.js, Python, and Java. CS graduate from CSULB, pursuing MS in Computer Science at Georgia Tech.">
+    <meta property="og:image" content="https://destinbyrd.com/img/profile.jpg">
+    <meta property="og:site_name" content="Destin Byrd Portfolio">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://destinbyrd.com/">
+    <meta property="twitter:title" content="Destin Byrd - Software Developer & CS Graduate">
+    <meta property="twitter:description" content="Software developer with expertise in React, Node.js, Python, and Java. CS graduate from CSULB, pursuing MS in Computer Science at Georgia Tech.">
+    <meta property="twitter:image" content="https://destinbyrd.com/img/profile.jpg">
+    
+    <!-- Additional SEO Meta Tags -->
+    <meta name="theme-color" content="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Destin Byrd">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://destinbyrd.com/">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://unpkg.com">
+    
     <!-- Link to css -->
     <link rel="stylesheet" href="/css/style.css">
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Destin Byrd",
+        "jobTitle": "Software Developer",
+        "description": "Software developer with expertise in React, Node.js, Python, and Java. CS graduate from CSULB, pursuing MS in Computer Science at Georgia Tech.",
+        "url": "https://destinbyrd.com",
+        "email": "destin.byrd@outlook.com",
+        "telephone": "+1-559-824-1529",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Fresno",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "California State University Long Beach",
+                "degree": "Bachelor's of Science in Computer Science"
+            },
+            {
+                "@type": "CollegeOrUniversity", 
+                "name": "Georgia Institute of Technology",
+                "degree": "Master's of Science in Computer Science (Machine Learning / AI Specialization)"
+            }
+        ],
+        "knowsAbout": [
+            "React", "Node.js", "Python", "Java", "JavaScript", "TypeScript", 
+            "Full-Stack Development", "Machine Learning", "Artificial Intelligence",
+            "Web Development", "Mobile Development", "Database Design"
+        ],
+        "sameAs": [
+            "https://github.com/pokedig2",
+            "https://www.linkedin.com/in/destin-byrd/",
+            "https://twitter.com/destin4235"
+        ]
+    }
+    </script>
 </head>
 <body>
     <!-- Header -->
-    <header>
+    <header role="banner">
         <!-- Nav -->
-        <div class="nav container">
+        <nav class="nav container" role="navigation" aria-label="Main navigation">
         <!-- Logo -->
-        <a href="#home" class="logo">Destin<span>Byrd</span></a>
+        <a href="#home" class="logo" aria-label="Go to homepage">Destin<span>Byrd</span></a>
         <!-- Navigation -->
         <div class="nav-links">
-            <a href="#about">About</a>
-            <a href="#education">Education</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+            <a href="#about" aria-label="Go to about section">About</a>
+            <a href="#education" aria-label="Go to education section">Education</a>
+            <a href="#experience" aria-label="Go to experience section">Experience</a>
+            <a href="#skills" aria-label="Go to skills section">Skills</a>
+            <a href="#projects" aria-label="Go to projects section">Projects</a>
+            <a href="#contact" aria-label="Go to contact section">Contact</a>
         </div>
-    </div>
+    </nav>
     </header>
     <!-- Home -->
-    <section class="home" id="home">
-        <div class="home-text container">
-            <h2 class="home-title">Destin Byrd</h2>
-            <span class="home-subtitle">Software Developer & Creative Technologist</span>
-        </div>
-    </section>
+    <main role="main">
+        <section class="home" id="home">
+            <div class="home-text container">
+                <h1 class="home-title">Destin Byrd</h1>
+                <span class="home-subtitle">Software Developer & Creative Technologist</span>
+            </div>
+        </section>
     
     <!-- About Section -->
     <section class="about container" id="about">
@@ -191,17 +280,18 @@
             </div>
         </div>
     </section>
+    </main>
 
     <!-- Footer -->
-    <div class="footer container">
-         <p>Copyright &copy; 2025 Destin Byrd</p>
+    <footer class="footer container" role="contentinfo">
+         <p>&copy; 2025 Destin Byrd. All rights reserved.</p>
          <div class="social">
-             <a href="https://github.com/pokedig2"><i class='bx bxl-github'></i></a>
-             <a href="https://www.linkedin.com/in/destin-byrd/"><i class='bx bxl-linkedin'></i></a>
-             <a href="https://twitter.com/destin4235"><i class='bx bxl-twitter'></i></a>
-             <a href="mailto:destin.byrd@outlook.com"><i class='bx bx-envelope'></i></a>
+             <a href="https://github.com/pokedig2" aria-label="Visit GitHub profile"><i class='bx bxl-github'></i></a>
+             <a href="https://www.linkedin.com/in/destin-byrd/" aria-label="Visit LinkedIn profile"><i class='bx bxl-linkedin'></i></a>
+             <a href="https://twitter.com/destin4235" aria-label="Visit Twitter profile"><i class='bx bxl-twitter'></i></a>
+             <a href="mailto:destin.byrd@outlook.com" aria-label="Send email"><i class='bx bx-envelope'></i></a>
          </div>
-    </div>
+    </footer>
 
     <!-- Link To JS -->
     <script src="/js/main.js"></script>

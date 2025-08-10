@@ -9,6 +9,16 @@ app.get('/', (req, res) => {
     res.sendFile(__dirname + '/public/index.html');
 });
 
+// Serve sitemap.xml
+app.get('/sitemap.xml', (req, res) => {
+    res.sendFile(__dirname + '/public/sitemap.xml');
+});
+
+// Serve robots.txt
+app.get('/robots.txt', (req, res) => {
+    res.sendFile(__dirname + '/public/robots.txt');
+});
+
 /*
 const server = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/html' });
