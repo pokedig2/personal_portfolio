@@ -4,7 +4,7 @@
 */
 import fs from 'node:fs'
 import path from 'node:path'
-import pdf from 'pdf-parse'
+import pdf from 'pdf-parse/lib/pdf-parse.js'
 
 const ROOT = process.cwd()
 const pdfPath = path.join(ROOT, 'public', 'Destin_Resume.pdf')
