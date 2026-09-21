@@ -21,12 +21,13 @@
     <meta property="og:title" content="Destin Byrd - Software Engineer">
     <meta property="og:description" content="Software engineer at Florida Housing Finance Corporation building C#/.NET applications, REST API integrations, and document automation. Pursuing an MS in Computer Science at Georgia Tech.">
     <meta property="og:image" content="https://destinbyrd.com/img/destin_portrait.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
+    <meta property="og:image:width" content="200">
+    <meta property="og:image:height" content="200">
+    <meta property="og:image:alt" content="Destin Byrd">
     <meta property="og:site_name" content="Destin Byrd Portfolio">
     
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:card" content="summary">
     <meta property="twitter:url" content="https://destinbyrd.com/">
     <meta property="twitter:title" content="Destin Byrd - Software Engineer">
     <meta property="twitter:description" content="Software engineer at Florida Housing Finance Corporation building C#/.NET applications, REST API integrations, and document automation. Pursuing an MS in Computer Science at Georgia Tech.">
@@ -43,10 +44,8 @@
     <link rel="canonical" href="https://destinbyrd.com/">
     
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="apple-touch-icon" href="/img/destin_portrait.jpg">
     
     <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,25 +82,26 @@
         "knowsAbout": [
             "C#", ".NET Framework", "Python", "SQL Server", "REST APIs",
             "Hyland OnBase", "Azure DevOps", "Workflow Automation",
-            "Document Accessibility", "React", "Node.js", "Java", "TypeScript"
+            "Document Accessibility", "React", "Node.js", "Java", "TypeScript", "PyTorch", "OpenCV"
         ],
         "sameAs": [
             "https://github.com/pokedig2",
-            "https://www.linkedin.com/in/destin-byrd/",
-            "https://twitter.com/destin4235"
+            "https://www.linkedin.com/in/destin-byrd/"
         ]
     }
     </script>
 </head>
 <body>
+    <a href="#main" class="skip-link">Skip to content</a>
     <!-- Header -->
     <header role="banner">
         <!-- Nav -->
         <nav class="nav container" role="navigation" aria-label="Main navigation">
         <!-- Logo -->
         <a href="#home" class="logo" aria-label="Go to homepage">Destin<span>Byrd</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" hidden>Menu</button>
         <!-- Navigation -->
-        <div class="nav-links">
+        <div class="nav-links" id="nav-links">
             <a href="#about" aria-label="Go to about section">About</a>
             <a href="#education" aria-label="Go to education section">Education</a>
             <a href="#experience" aria-label="Go to experience section">Experience</a>
@@ -112,15 +112,18 @@
     </nav>
     </header>
     <!-- Home -->
-    <main role="main">
+    <main role="main" id="main">
         <section class="home" id="home">
             <div class="home-content container">
                 <div class="home-text">
                     <h1 class="home-title">Destin Byrd</h1>
                     <span class="home-subtitle">Software Engineer · C#/.NET, Python &amp; Automation</span>
+                    <div class="home-actions">
+                        <a href="#projects" class="primary-link">View Projects</a>
+                    </div>
                 </div>
                 <div class="home-image">
-                    <img src="/img/destin_portrait.jpg" alt="Destin Byrd - Software Engineer" class="profile-image">
+                    <img src="/img/destin_portrait.jpg" alt="Destin Byrd - Software Engineer" class="profile-image" width="200" height="200" fetchpriority="high">
                 </div>
             </div>
         </section>
@@ -212,7 +215,7 @@
             </div>
             <div class="skill-item">
                 <h3>Frameworks & Libraries</h3>
-                <p>.NET Framework, REST APIs, React, Node.js, Express.js, Next.js, Tailwind, WordPress, pandas, NumPy, Matplotlib, PyTorch</p>
+                <p>.NET Framework, REST APIs, React, Node.js, Express.js, Next.js, Tailwind, WordPress, pandas, NumPy, Matplotlib, PyTorch, OpenCV</p>
             </div>
             <div class="skill-item">
                 <h3>Developer Tools & Cloud</h3>
@@ -228,23 +231,67 @@
     <!-- Projects Section -->
     <section class="projects container" id="projects">
         <h2 class="section-title">Projects</h2>
+        <p class="section-intro">Recent projects and selected earlier work.</p>
         <div class="projects-grid">
+            <article class="project-card">
+                <div class="project-content">
+                    <p class="project-meta">Georgia Tech team project · July 2026</p>
+                    <h3 class="project-title">Plant Protectors</h3>
+                    <p class="project-description">A plant-care prototype combining Android image and audio collection, OpenCV color analysis, and Arduino LED feedback through a Python serial bridge. The team project explores mobile interfaces and hardware integration; plant-health classification remains a prototype.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java / Android</span>
+                        <span class="tech-tag">OpenCV</span>
+                        <span class="tech-tag">Arduino</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <p class="project-meta">Personal research project · 2026</p>
+                    <h3 class="project-title">Options Research Scanner</h3>
+                    <p class="project-description">An experimental Python tool that compares market option prices with modeled values to flag outliers for investigation. Combines volatility-surface fitting, PyTorch neural networks, liquidity filters, and backtesting tools.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">pandas</span>
+                        <span class="tech-tag">NumPy</span>
+                    </div>
+                </div>
+            </article>
+            <article class="project-card">
+                <div class="project-content">
+                    <p class="project-meta">Data &amp; web application · 2025</p>
+                    <h3 class="project-title">Labor Market Explorer</h3>
+                    <p class="project-description">A React interface and Node.js/Express API for exploring Bureau of Labor Statistics unemployment and inflation data. Accepts a series ID and date range, fetches time-series JSON, and presents monthly values in readable tables.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">REST APIs</span>
+                    </div>
+                    <a class="project-link" href="https://github.com/pokedig2/labor_market">View backend source <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
             <div class="project-card">
                 <div class="project-content">
-                    <h3 class="project-title">Labor Market Information System</h3>
-                    <p class="project-description">Developed a Liferay-based Java portlet to display dynamic unemployment rate data using REST API integration and JSON parsing. Built a responsive user interface with HTML, CSS, Bootstrap, and JavaScript/jQuery.</p>
+                    <p class="project-meta">Java &amp; API integration · 2025</p>
+                    <h3 class="project-title">Oregon Labor Data Portlet</h3>
+                    <p class="project-description">A Liferay-based Java portlet that displays historical Oregon county unemployment data. Server-side REST API requests feed a dynamic table with county selection and monthly values, using JavaScript/jQuery and Bootstrap.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Java</span>
                         <span class="tech-tag">Liferay</span>
                         <span class="tech-tag">REST API</span>
                         <span class="tech-tag">JavaScript</span>
                     </div>
+                    <a class="project-link" href="https://github.com/pokedig2/labor-market-proiect">Read project overview <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-content">
+                    <p class="project-meta">Earlier mobile app project</p>
                     <h3 class="project-title">Secure File Sharing</h3>
-                    <p class="project-description">Developed a Dart + SQL app with RESTful APIs for encrypted data exchange. Implemented secure file sharing capabilities with encryption and user authentication.</p>
+                    <p class="project-description">A Dart and Flutter application using SQL and REST APIs for file sharing, with user authentication and encrypted data exchange.</p>
                     <div class="project-tech">
                         <span class="tech-tag">Dart</span>
                         <span class="tech-tag">Flutter</span>
@@ -255,14 +302,16 @@
             </div>
             <div class="project-card">
                 <div class="project-content">
+                    <p class="project-meta">Earlier game project</p>
                     <h3 class="project-title">Chibi Clicker</h3>
-                    <p class="project-description">Developed a C# mobile game with Firebase backend and logarithmic scaling system in Unity Game Engine. Created an engaging clicker game with progression mechanics.</p>
+                    <p class="project-description">A team-built mobile clicker game developed in Unity with C# and Firebase. Players earn currency by tapping characters, with progression based on logarithmic scaling.</p>
                     <div class="project-tech">
                         <span class="tech-tag">C#</span>
                         <span class="tech-tag">Firebase</span>
                         <span class="tech-tag">Unity</span>
                         <span class="tech-tag">Git</span>
                     </div>
+                    <a class="project-link" href="https://github.com/pokedig2/chibiclicker">View project archive <span aria-hidden="true">↗</span></a>
                 </div>
             </div>
         </div>
@@ -297,11 +346,10 @@
 
     <!-- Footer -->
     <footer class="footer container" role="contentinfo">
-         <p>&copy; 2026 Destin Byrd. All rights reserved.</p>
+         <p>&copy; <span id="copyright-year">2026</span> Destin Byrd. All rights reserved.</p>
          <div class="social">
              <a href="https://github.com/pokedig2" aria-label="Visit GitHub profile"><i class='bx bxl-github'></i></a>
              <a href="https://www.linkedin.com/in/destin-byrd/" aria-label="Visit LinkedIn profile"><i class='bx bxl-linkedin'></i></a>
-             <a href="https://twitter.com/destin4235" aria-label="Visit Twitter profile"><i class='bx bxl-twitter'></i></a>
              <a href="mailto:destin.byrd@outlook.com" aria-label="Send email"><i class='bx bx-envelope'></i></a>
          </div>
     </footer>
